@@ -12,6 +12,15 @@ data Expr = Val Int
           | Plus Expr Expr
           deriving Show
 
+expr0 :: Expr
+expr0 = Val 4
+
+expr1 :: Expr
+expr1 = Plus (Val 4) (Val 8)
+
+expr2 :: Expr
+expr2 = Plus (Plus (Val 4) (Val 15)) (Val 8)
+
 --------------------------------------------------------------------------------
 -- Interpreter
 
@@ -29,6 +38,15 @@ data Instr = PUSH Int
 
 type Program = [Instr]
 type Stack   = [Int]
+
+program0 :: Program
+program0 = [PUSH 4]
+
+program1 :: Program
+program1 = [PUSH 4, PUSH 8, ADD]
+
+program2 :: Program
+program2 = [PUSH 4, PUSH 15, ADD, PUSH 8, ADD]
 
 -- | `exec` @program stack@ executes @program@ with an initial @stack@.
 exec :: Program -> Stack -> Stack
