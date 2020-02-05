@@ -1,2 +1,3 @@
-# lecture13
-Code shown in the thirteenth lecture.
+# Lecture: Equational reasoning (cont.)
+
+Code shown in the second lecture on equational reasoning.
