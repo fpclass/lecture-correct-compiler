@@ -1,9 +1,9 @@
 --------------------------------------------------------------------------------
 -- Functional Programming (CS141)                                             --
--- Lecture 13: Reasoning about programs (cont.)                               --
+-- Lecture: Reasoning about programs (cont.)                                  --
 --------------------------------------------------------------------------------
 
-module Lecture13 where
+module Lecture where
 
 --------------------------------------------------------------------------------
 -- Expression language
